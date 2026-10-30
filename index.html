@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>TourB — презентация</title>
+<link rel="stylesheet" href="style.css">
+
+<script src="javascript.js" defer></script>
+</head>
+<body>
+<div id="bar"><i></i></div><div id="glow"></div>
+<main id="deck">
+
+<!-- 1 -->
+<section class="slide photo" data-t="fade"><div class="bg" data-p="16">
+</div><div class="in">
+<span class="tag a">STARTUP · КОНЦЕПТ ПРОЕКТА</span>
+<h1 class="a">TourB</h1>
+<p class="lead a">ТурБи — туристический веб-сервис: единая точка входа в цифровую инфраструктуру путешественника по Кыргызстану</p>
+<p class="gold a">Карта · транспорт · жильё · деньги · офлайн</p>
+<div class="chs a"><b>RU</b><b>EN</b><b>中文</b><b>КЫР</b></div>
+<small class="a">Язык интерфейса выбирается на первом экране. Макеты в презентации — концептуальные; интеграции и партнёрства описаны как планы.</small>
+</div></section>
+
+<!-- 2 -->
+<section class="slide light" data-t="zoom"><div class="in">
+<span class="tag a">КОНЦЕПЦИЯ</span>
+<h2 class="a">Один сервис вместо десяти вкладок</h2>
+<div class="gr" style="--g:1.5fr 1fr">
+<div class="col">
+<div class="card row a"><span class="ic c1">🗺</span><div><h3>Не каталог ссылок</h3><p>Единая точка входа: карта, транспорт, жильё, деньги и офлайн-пакет в одном месте на языке туриста.</p></div></div>
+<div class="card row a"><span class="ic c2">🛡</span><div><h3>Доверие как принцип</h3><p>У каждого факта — источник и дата проверки; расхождения источников не скрываем.</p></div></div>
+<div class="card row a"><span class="ic c4">👥</span><div><h3>Польза для отрасли</h3><p>Гиды, арендодатели и организации получат канал к иностранной аудитории (этап 2 и позже).</p></div></div>
+</div>
+<div class="card k stat a">
+<div class="big">≈ <span data-n="641">641</span> тыс.</div>
+<p>въездов граждан стран вне СНГ в 2025 году — сегмент, на который нацелен TourB</p>
+<small>Это пересечения границы, а не уникальные туристы; не все из них — самостоятельные путешественники. Это не число потенциальных клиентов.<br>Источник: исследование TourB на открытых источниках, 13.10.2026.</small>
+</div></div>
+</div></section>
+
+<!-- 3 -->
+<section class="slide dark" data-t="mask"><div class="in">
+<span class="tag a">ПРОБЛЕМА → ПОДТВЕРЖДЕНИЕ → ПОСЛЕДСТВИЕ</span>
+<h2 class="a">Проблемы, подтверждённые исследованием</h2>
+<div class="tw"><table>
+<tr class="a"><th>Проблема<th>Подтверждение в исследовании<th>Последствие для туриста<th>Ответ TourB
+<tr class="a"><td>1 · Противоречивые правила въезда<td>Срок безвиза в источниках 2025–2026: <b class="hl">30 или 60 дней</b>; правила менялись в 2026 году<td>Неясно, сколько можно остаться<td>Страница правил по гражданству: источник и дата проверки
+<tr class="a"><td>2 · Первые часы после прилёта<td>Свидетельства 2026 года: нет банкомата в терминале, Wi-Fi не работает, посадка в такси далеко от выхода<td>Нет связи и наличных сразу по прилёте<td>«Первые 24 часа»: чек-лист и офлайн-пакет
+<tr class="a"><td>3 · Деньги и оплата<td>Иностранные карты в Yandex Go работают нестабильно; лимиты банкоматов <b class="hl">20–25 или 50 тыс. сом</b>; комиссии <b class="hl">от 0 до 800 сом</b><td>Непонятно, чем платить и сколько брать наличных<td>Карта банкоматов и обмена с датой, конвертер
+<tr class="a"><td>4 · Межгород без единого решения<td>Бишкек — Каракол: цены в гайдах <b class="hl">350–650 сом</b>, по расписанию данные противоположные<td>Риск переплатить или не уехать вовремя<td>Карточка маршрута: вокзал, способ брони, цена, дата
+<tr class="a"><td>5 · Сезонная доступность<td>Сон-Куль: в источниках разные сроки открытия — конец мая или середина июня<td>Поездка может не состояться<td>Календарь доступности (после MVP)
+</table></div>
+<small class="foot a">Это результаты исследования на открытых источниках (13.10.2026), а не гарантированно действующие сегодня условия. Объёмы поиска не измерялись; часть данных — единичные свидетельства (достоверность B/C).</small>
+</div></section>
+
+<!-- 4 -->
+<section class="slide light" data-t="fade"><div class="in">
+<span class="tag a">АУДИТОРИЯ И СЦЕНАРИИ</span>
+<h2 class="a">Для кого и в какой момент</h2>
+<div class="trk a"><span>ДО ПОЕЗДКИ</span><span>В ПЕРЕЛЁТЕ</span><span>ПО ПРИБЫТИИ</span><u>✈</u></div>
+<div class="gr" style="--g:1fr 1fr 1fr">
+<div class="card a"><div class="row"><span class="ic c1">📋</span><h3>Я планирую</h3></div><ul><li>Правила въезда и пребывания<li>Лучшее время и маршрут<li>Бюджет поездки</ul></div>
+<div class="card a"><div class="row"><span class="ic c3">✈</span><h3>Я лечу</h3></div><ul><li>Чек-лист до вылета<li>eSIM, приложения, офлайн-карты<li>Наличные и способы оплаты</ul></div>
+<div class="card a"><div class="row"><span class="ic c2">📍</span><h3>Я уже здесь</h3></div><ul><li>Выход из аэропорта и такси<li>Транспорт, деньги, жильё<li>Куда сходить сегодня</ul></div>
+</div>
+<h3 class="gold a">Кто пользуется (сегменты из исследования)</h3>
+<div class="chs a"><b>Первая поездка</b><b>Соло и backpackers</b><b>Оверлендеры</b><b>Треккинг и юрты</b><b>Цифровые кочевники</b></div>
+<small class="a">Также полезен местным жителям, гидам, арендодателям и организациям (этап 2+). Частота запросов по сегментам не измерялась.</small>
+</div></section>
+
+<!-- 5 -->
+<section class="slide dark" data-t="depth"><div class="in">
+<span class="tag a">РЕШЕНИЕ</span>
+<h2 class="a">TourB: единая точка входа</h2>
+<div class="hub" data-p="10">
+<div class="col">
+<div class="card mod a" data-s="s"><span class="ic c2">🔤</span><span>Профиль и языки</span></div>
+<div class="card mod a" data-s="s e"><span class="ic c1">🗺</span><span>Карта и места</span></div>
+<div class="card mod a" data-s="e d"><span class="ic c1">🚌</span><span>Транспорт</span></div>
+<div class="card mod a" data-s="e l"><span class="ic c1">🛏</span><span>Жильё и гиды</span></div>
+</div>
+<div class="core a"><b>TourB</b><span>ТурБи</span></div>
+<div class="col">
+<div class="card mod a" data-s="s e"><span class="ic c1">👛</span><span>Деньги и курсы</span></div>
+<div class="card mod a" data-s="s"><span class="ic c2">🧰</span><span>Микросервисы</span></div>
+<div class="card mod a" data-s="s"><span class="ic c2">☁</span><span>Офлайн-пакет</span></div>
+<div class="card mod a" data-s="d l"><span class="ic c4">🤖</span><span>Куда сходить и ИИ</span></div>
+</div></div>
+<div class="lg a"><span class="pill s">Делаем сами</span><span class="pill e">Через внешние сервисы</span><span class="pill d">Нужны договорённости</span><span class="pill l">После MVP</span></div>
+<small class="foot a">Цветные точки у модуля — статусы его частей. Не все модули разработаны: это план продукта.</small>
+</div></section>
+
+<!-- 6 -->
+<section class="slide light" data-t="mask"><div class="in">
+<span class="tag a">СТАТУС ФУНКЦИЙ</span>
+<h2 class="a">Честная карта функций</h2>
+<div class="gr" style="--g:1fr 1fr 1fr 1fr">
+<div class="card st s a"><h3><i class="dot s"></i>Делаем сами</h3><ul><li>Выбор языка и интерфейс<li>Каталог мест и карточки сервисов<li>Конвертер и экран курсов*<li>Чек-листы, номера, разговорник<li>Профиль и избранное<li>Офлайн-пакет (PWA) — в планах</ul></div>
+<div class="card st e a"><h3><i class="dot e"></i>Через внешние сервисы</h3><ul><li>Карты: 2GIS, Яндекс Карты, Google Maps<li>Такси: Yandex Go, inDrive<li>Жильё: Meiman.kg, Booking.com, Airbnb и др.<li>Вход через Google<li>Источники курсов валют*<li>Официальные API транспорта и «Мой город», если доступны</ul></div>
+<div class="card st d a"><h3><i class="dot d"></i>Нужны договорённости</h3><ul><li>SMS туристам после покупки SIM (операторы)<li>Данные и API банков<li>Партнёрские программы, комиссии<li>Источники данных афиши</ul></div>
+<div class="card st l a"><h3><i class="dot l"></i>После MVP</h3><ul><li>Площадка гидов и арендодателей, чаты<li>ИИ-ассистент<li>Мероприятия и напоминания<li>Календарь сезонной доступности<li>Бронирование, другие города</ul></div>
+</div>
+<div class="note a">Ни с одним из перечисленных сервисов и компаний договорённостей пока нет — это планы и возможности.<br><small>* — при надёжном источнике данных</small></div>
+</div></section>
+
+<!-- 7 -->
+<section class="slide dark" data-t="zoom"><div class="in">
+<span class="tag a">КАРТА · МИКРОСЕРВИСЫ</span>
+<h2 class="a">Карта и микросервисы</h2>
+<div class="gr" style="--g:19rem 1fr">
+<div class="a"><div class="ph">
+<div class="sr">🔍 Поиск места или услуги</div>
+<div class="chs"><b class="sel">Банкоматы</b><b>Обмен</b><b>Кафе</b></div>
+<svg viewBox="0 0 200 110" class="map"><rect width="200" height="110" fill="#eef2f9"/><path class="route" d="M25 30 C70 20 80 60 110 52 S160 90 175 80" fill="none" stroke="#2f7bff" stroke-width="2.5" stroke-dasharray="4 4"/><circle cx="25" cy="30" r="6" fill="#18a897"/><circle cx="165" cy="22" r="6" fill="#2f7bff"/><circle cx="110" cy="52" r="7" fill="#ffb03b"/><circle cx="50" cy="88" r="6" fill="#ff6b6b"/><circle cx="175" cy="80" r="6" fill="#18a897"/></svg>
+<div class="sr pc"><b>Пример: обменный пункт</b><br>Проверено: дата · источник</div>
+</div><small class="cap">Концепт, не рабочий экран</small></div>
+<div class="col">
+<div class="card a">Фильтры: категория · расстояние · время работы. Выбор города. Навигация — через сторонние картографические сервисы.</div>
+<div class="tw"><table>
+<tr class="a"><th>Микросервис<th>Зачем<th>Данные<th>Сложность · этап
+<tr class="a"><td>Обмен и банкоматы<td>Первые сомы, лимиты и комиссии<td>Ручная база с датой проверки<td>Средняя · MVP
+<tr class="a"><td>Экстренные номера<td>Помощь в городе и в горах<td>Официальные номера (112, 101, 102, 103)<td>Низкая · MVP
+<tr class="a"><td>Первые 24 часа<td>SIM, приложения, выход из аэропорта<td>Тексты с датой проверки<td>Низкая · MVP
+<tr class="a"><td>Калькулятор наличных<td>Сколько брать на маршрут<td>Средние расходы, формулы<td>Средняя · этап 2
+<tr class="a"><td>Мини-разговорник RU/KY<td>Быт, транспорт, еда<td>Подготовленные фразы<td>Низкая · этап 2
+</table></div></div></div>
+</div></section>
+
+<!-- 8 -->
+<section class="slide light" data-t="fade"><div class="in">
+<span class="tag a">ТРАНСПОРТ</span>
+<h2 class="a">Транспорт: три сценария</h2>
+<div class="gr" style="--g:1fr 1fr 1fr">
+<div class="card a"><div class="row"><span class="ic c3">🚕</span><h3>Такси и доставка</h3></div><ul><li>Yandex Go, inDrive<li>Подсказка: установить заранее и проверить способ оплаты<li>MVP: ссылка на приложение</ul></div>
+<div class="card a"><div class="row"><span class="ic c1">🚌</span><h3>Общественный транспорт</h3></div><ul><li>Переход к 2GIS<li>«Мой город» — возможный источник данных<li>Гайд: безнал в автобусах Бишкека с 1 июля 2026 <em>(утверждение из исследования — проверить перед публичным показом)</em></ul></div>
+<div class="card a"><div class="row"><span class="ic c2">🧭</span><h3>Межгород и трансферы</h3></div><ul><li>Карточка маршрута: вокзал, способ брони, цена, дата проверки<li>Аэропорт → город → гостиница</ul></div>
+</div>
+<div class="note a">Этап 1 — только ссылки на приложения и сайты. Глубокие интеграции возможны при наличии API и разрешений. Готовых соглашений с этими сервисами нет.</div>
+</div></section>
+
+<!-- 9 -->
+<section class="slide dark" data-t="mask"><div class="in">
+<span class="tag a">ЖИЛЬЁ · ГИДЫ · АГЕНТСТВА</span>
+<h2 class="a">Жильё и гиды: каталог или площадка</h2>
+<div class="gr" style="--g:1fr 2fr">
+<div class="card a"><h3>Рассматриваем как ссылки</h3><h4>Международные</h4><p>Booking.com, Airbnb, Trip.com</p><h4>Местные</h4><p>Meiman.kg, CBT Kyrgyzstan, Booklink</p><h4>Рынок СНГ</h4><p>Ostrovok.ru, Яндекс Путешествия, Суточно.ру, 101Hotels.com</p><em class="gold">Партнёрами не являются.</em></div>
+<div class="col"><div class="tw"><table>
+<tr class="a"><th>Критерий<th>Каталог ссылок (MVP)<th>Собственная площадка (позже)
+<tr class="a"><td>Срок разработки<td>Короткий<td>Длинный
+<tr class="a"><td>Сложность<td>Низкая: карточки и ссылки<td>Высокая: аккаунты, чаты, модерация
+<tr class="a"><td>Безопасность<td>Ответственность на внешних платформах<td>Нужны проверка, жалобы, модерация
+<tr class="a"><td>Стоимость поддержки<td>Низкая: проверять ссылки<td>Высокая: поддержка и модерация
+<tr class="a"><td>Ценность<td>Быстрая польза, мало уникальности<td>Выше, но нужна критическая масса
+</table></div>
+<p class="a">Для гидов и агентств — тот же путь: каталог с контактами и языками обслуживания (если подтверждены), затем площадка. На старте каталог реалистичнее: быстрее, дешевле в поддержке и не требует модерации.</p></div></div>
+</div></section>
+
+<!-- 10 -->
+<section class="slide light" data-t="zoom"><div class="in">
+<span class="tag a">ФИНАНСЫ · СВЯЗЬ</span>
+<h2 class="a">Деньги и связь</h2>
+<div class="gr" style="--g:19rem 1fr">
+<div class="a"><div class="ph">
+<h3>Конвертер</h3>
+<div class="chs"><b class="sel">USD · —</b><b>EUR · —</b><b>CNY · —</b></div>
+<div class="sr fld"><span>KGS</span><b>1 000</b></div>
+<button class="sw" aria-label="Поменять валюты">⇄</button>
+<div class="sr fld"><span>Валюта</span><b>= —</b></div>
+<small>Здесь: источник курса и время обновления</small>
+</div><small class="cap">Концепт, не рабочий экран. Курсы не выдуманы — прочерки.</small></div>
+<div class="col">
+<div class="card a"><div class="row"><span class="ic c2">⇄</span><h3>Курсы и конвертер</h3><span class="bd c2">MVP*</span></div><p>Полоска курсов и конвертер. Показываем источник и время обновления; если данных нет — последнее известное значение. Список валют уточним.</p></div>
+<div class="card a"><div class="row"><span class="ic c3">🏦</span><h3>Банки и обмен</h3><span class="bd c3">Идея</span></div><p>Банкоматы, отделения, обменные пункты и ссылки на официальные ресурсы банков. TourB не оказывает банковских услуг; API и данные банков — только по договорённости.</p></div>
+<div class="card a"><div class="row"><span class="ic c3">📶</span><h3>SIM-канал привлечения</h3><span class="bd c3">План</span></div><p>Гипотеза: SMS со ссылкой на TourB после покупки SIM — информация туристу сразу по прилёте. Интерес оператора — гипотеза; нужны переговоры и согласование рассылок.</p></div>
+<small class="a">* при надёжном источнике данных</small></div></div>
+</div></section>
+
+<!-- 11 -->
+<section class="slide dark" data-t="depth"><div class="in">
+<span class="tag a">МЕРОПРИЯТИЯ</span>
+<h2 class="a">Куда сходить</h2>
+<div class="gr" style="--g:19rem 1fr">
+<div class="a"><div class="ph">
+<h3>Куда сходить <small class="demo">Пример интерфейса</small></h3>
+<div class="chs"><b class="sel">Сегодня</b><b>Выходные</b><b>Дата…</b></div>
+<div class="ev c2"><i></i><span><b>Название события</b><br>дата · место</span></div>
+<div class="ev c3"><i></i><span><b>Название события</b><br>дата · место</span></div>
+<div class="ev c4"><i></i><span><b>Название события</b><br>дата · место</span></div>
+</div><small class="cap">Концепт, не рабочий экран</small></div>
+<div class="col">
+<div class="card row a"><span class="ic c1">🗺</span>Карта ближайших мероприятий</div>
+<div class="card row a"><span class="ic c3">📅</span>Фильтры по датам и категориям: концерты, фестивали, выставки</div>
+<div class="card row a"><span class="ic c2">📋</span>Избранное и небольшой личный план посещений</div>
+<div class="card row a"><span class="ic c4">📍</span>Подборка мест рядом — только при разрешении геолокации</div>
+<div class="note a">Условие: нужны источники данных и регулярное обновление афиши. Напоминания и автосбор событий — после MVP, способ реализации не определён.</div>
+</div></div>
+</div></section>
+
+<!-- 12 -->
+<section class="slide light" data-t="fade"><div class="in">
+<span class="tag a">ПОЛЬЗОВАТЕЛЬ</span>
+<h2 class="a">Профиль, языки и ИИ-помощник</h2>
+<div class="gr" style="--g:1fr 1fr 1fr">
+<div class="card a"><div class="row"><span class="ic c1">文</span><h3>Языки на первом экране</h3></div><div class="chs"><b>RU</b><b>EN</b><b>中文</b><b>КЫР</b></div><ul><li>Выбор виден сразу, не в настройках<li>Интерфейс расширяемый: новые языки — после проверки спроса<li>Кандидат: французский (в исследовании найден пробел)</ul></div>
+<div class="card a"><div class="row"><span class="ic c2">👤</span><h3>Профиль</h3></div><ul><li>Просмотр открыт без регистрации<li>В будущем: вход через Google или e-mail с подтверждением<li>Кыргызский номер телефона не нужен<li>Избранное и отзывы<li>Сначала — турист; гид, арендодатель и партнёр — позже</ul></div>
+<div class="card a"><div class="row"><span class="ic c4">🤖</span><h3>ИИ-помощник <small>(этап 2)</small></h3></div><ul><li>«Как добраться из аэропорта в центр?»<li>«Что посмотреть в Бишкеке за день?»<li>Отвечает на языке пользователя по данным сервиса<li>Даёт ссылки на источники и просит проверить важное<li>Не заменяет экстренные службы и не безошибочен</ul></div>
+</div>
+</div></section>
+
+<!-- 13 -->
+<section class="slide dark" data-t="mask"><div class="in">
+<span class="tag a">ОФЛАЙН · ДОВЕРИЕ</span>
+<h2 class="a">Офлайн и безопасность</h2>
+<div class="gr" style="--g:1fr 1fr">
+<div class="card a"><div class="row"><span class="ic c2">☁</span><h3>Офлайн (PWA, кэш)</h3></div>
+<p><small>PWA — сайт, который ставится на телефон и заранее сохраняет нужное в память, как приложение.</small></p>
+<h4 class="tl">Первый вариант — сохраняем заранее:</h4><ul><li>Избранные места и маршруты<li>Базовая информация и контакты<li>Чек-лист и экстренные номера</ul>
+<h4 class="gold">Нужен интернет:</h4><ul class="y"><li>Курсы валют и афиша<li>Переписка, поиск новых объектов<li>Часть функций карт — сторонние карты без сети не обещаем</ul>
+<em>Пользователь видит, что доступно без сети</em></div>
+<div class="card a"><div class="row"><span class="ic c3">🛡</span><h3>Безопасность</h3></div>
+<ul><li>Подтверждение e-mail и безопасная авторизация<li>Защита пользовательских данных<li>Жалобы и модерация отзывов<li>Источник и дата у каждой информации<li>Предупреждения о подозрительных предложениях</ul>
+<div class="note">Проверка профиля — не абсолютная гарантия безопасности сделки</div></div>
+</div>
+</div></section>
+
+<!-- 14 -->
+<section class="slide light" data-t="fade"><div class="in">
+<span class="tag a">МОНЕТИЗАЦИЯ — ГИПОТЕЗЫ</span>
+<h2 class="a">Как проект может зарабатывать</h2>
+<div class="tw"><table>
+<tr class="a"><th>Модель<th>Запуск<th>Нужны партнёры<th>Риск для доверия<th>Когда
+<tr class="a"><td>1 · Партнёрская реклама<td>Проще всего<td>Да: рекламодатели<td>Средний: нужна пометка «реклама»<td>Этап 2, после аудитории
+<tr class="a"><td>2 · Комиссия за клиентов и брони<td>Сложнее<td>Да: программы и учёт переходов<td>Средний: раскрывать условия<td>Этап 3
+<tr class="a"><td>3 · Платные карточки бизнеса<td>Средне<td>Нет, но нужен трафик<td>Средний: отделять от рейтингов<td>Этап 2–3
+<tr class="a"><td>4 · Премиум-подборки<td>Средне<td>Нет<td>Низкий, если ценность очевидна<td>Отложить, проверить спрос
+</table></div>
+<div class="card k a"><h3 class="gold">Принцип: полезность и доверие важнее количества рекламы</h3><p>Гипотеза: MVP без монетизации, пока не доказана полезность продукта. Любые платные размещения — только с пометкой. Доходы и конверсию не прогнозируем: данных пока нет.</p></div>
+</div></section>
+
+<!-- 15 -->
+<section class="slide dark" data-t="cine"><div class="in">
+<span class="tag a">ЭТАПЫ</span>
+<h2 class="a">MVP и дорожная карта</h2>
+<div class="road"></div>
+<div class="gr rm" style="--g:1fr 1fr 1fr">
+<div class="card st c2 a"><small>01 · ПРОСТО И РЕАЛИЗУЕМО</small><h3>Этап 1 · MVP</h3><ul><li>Выбор языка, понятный интерфейс<li>Карта или каталог мест<li>Категории полезных сервисов<li>Ссылки на внешние платформы<li>Курсы и конвертер*<li>Вход через Google / e-mail*<li>Мини-офлайн*</ul></div>
+<div class="card st c1 a"><small>02 · РАСШИРЕНИЕ</small><h3>Этап 2</h3><ul><li>Профили гидов и арендодателей<li>Отзывы и оценки<li>Мероприятия и напоминания<li>Расширенный офлайн<li>ИИ-помощник<li>Дополнительные языки<li>Глубокие интеграции</ul></div>
+<div class="card st c3 a"><small>03 · ЭКОСИСТЕМА</small><h3>Этап 3</h3><ul><li>Сотрудничество с операторами и банками<li>Площадка гидов и арендодателей<li>Бронирования и комиссии<li>Персональные маршруты<li>Другие города и регионы</ul></div>
+</div>
+<small class="foot a">* если позволят время и источник данных. Предварительная структура: без сроков и гарантий реализации. Партнёрства — только после переговоров.</small>
+</div></section>
+
+<!-- 16 -->
+<section class="slide light" data-t="zoom"><div class="in">
+<span class="tag a">ЛЮДИ ПРОЕКТА</span>
+<h2 class="a">Команда проекта</h2>
+<div class="gr" style="--g:1fr 1fr 1fr 1fr">
+<div class="card team a"><span class="ic c1">🚩</span><h3>Project Lead</h3><small>Руководитель проекта</small><b class="nm">Ерешеев Алинур</b><p>Концепция, приоритеты, координация, презентация</p></div>
+<div class="card team a"><span class="ic c3">🎨</span><h3>Дизайн</h3><small>&nbsp;</small><b class="nm">Алымбекова Бегимай, Исмаилов Адахан</b><p>Интерфейс, визуальный стиль, макеты</p></div>
+<div class="card team a"><span class="ic c2">🧰</span><h3>Разработка</h3><small>&nbsp;</small><b class="nm">Мирзоев Мухаммад, Абдывалиева Асема<p>Разработка проекта: сайт, языки, карта, офлайн</p></div>
+<div class="card team a"><span class="ic c4">📋</span><h3>Контент</h3><small>&nbsp;</small><b class="nm">Токтожумаева Аймана, Сыргакбекова Айжамал, Бакытова Бермет</b><p>Тексты, проверка источников и ссылок</p></div>
+</div>
+<div class="card k motto a"><div><h3>«Там »</h3><p>Девиз команды — наша внутренняя шутка. К разработке мы относимся серьёзно.</p></div><em>Распределение ролей предварительное</em></div>
+</div></section>
+
+<!-- 17 -->
+<section class="slide photo r" data-t="cine"><div class="bg" data-p="16"></div><div class="in">
+<h2 class="a">Зачем нужен TourB</h2>
+<div class="card th a"><span class="ic c1">✓</span><div><h3>Что меняем</h3><p>От разрозненных и устаревших данных — к информации с источником и датой проверки.</p></div></div>
+<div class="card th a"><span class="ic c2">✓</span><div><h3>С чего начинаем</h3><p>MVP: языки, карта или каталог, ссылки на сервисы, минимум офлайна.</p></div></div>
+<div class="card th a"><span class="ic c3">✓</span><div><h3>Что дальше</h3><p>Сотрудничество с операторами, банками и платформами — только после переговоров.</p></div></div>
+<p class="thx a">Спасибо за внимание!</p>
+<div class="qr a"><div>QR</div><small>Место для QR-кода и контактов команды — добавить</small></div>
+</div></section>
+
+</main>
+<nav id="nav" aria-label="Навигация по слайдам"><button id="pv" aria-label="Назад">‹</button><div id="dots"></div><span id="ct">01 / 17</span><button id="nx" aria-label="Вперёд">›</button><button id="fs" aria-label="Полноэкранный режим">⛶</button></nav>
+</body>
+</html>
